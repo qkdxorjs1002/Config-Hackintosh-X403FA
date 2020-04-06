@@ -80,6 +80,11 @@ DefinitionBlock("", "SSDT", 2, "hack", "batt", 0)
         
         Scope (\_SB.PCI0.LPCB.EC.BAT0)
         {
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                Return (0x1F)
+            }
+            
             Method (_BIF, 0, NotSerialized)  // _BIF: Battery Information
             {
                 Store (B1B2 (BDC0, BDC1), Index (\_SB.PCI0.LPCB.EC.BAT0.BPKG, One))

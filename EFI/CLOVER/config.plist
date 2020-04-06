@@ -73,7 +73,7 @@
 				<key>AddMCHC</key>
 				<false/>
 				<key>AddPNLF</key>
-				<true/>
+				<false/>
 				<key>DeleteUnused</key>
 				<false/>
 				<key>FakeLPC</key>
@@ -133,11 +133,21 @@
 					<key>Comment</key>
 					<string>Fix RTC _STA Bug</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>oAqTU1RBUwE=</data>
 					<key>Replace</key>
 					<data>oAqRCv8L//8=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change H_EC to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>SF9FQw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -158,16 +168,6 @@
 					<data>SERBUw==</data>
 					<key>Replace</key>
 					<data>SERFRg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SF9FQw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -218,6 +218,16 @@
 					<data>FBNfU1RBAA==</data>
 					<key>Replace</key>
 					<data>FBNYU1RBAA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change _STA to XSTA in BAT0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>FBVfU1RBAA==</data>
+					<key>Replace</key>
+					<data>FBVYU1RBAA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -364,7 +374,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>-v debug=0x100</string>
+		<string>-v debug=0x100 igfxcflbklt=1</string>
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
@@ -629,16 +639,28 @@
 				<data>pT4AAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
 				<key>enable-cfl-backlight-fix</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-busid</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-index</key>
+				<data>/////w==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -652,13 +674,13 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>HighCurrent</key>
 			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -790,7 +812,7 @@
 		<key>EmbeddedThemeType</key>
 		<string>Light</string>
 		<key>Language</key>
-		<string>ko:-17409</string>
+		<string>ko:0</string>
 		<key>PlayAsync</key>
 		<false/>
 		<key>Scan</key>
@@ -1287,7 +1309,7 @@
 		<key>#NvidiaWeb</key>
 		<false/>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
