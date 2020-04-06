@@ -73,7 +73,7 @@
 				<key>AddMCHC</key>
 				<false/>
 				<key>AddPNLF</key>
-				<false/>
+				<true/>
 				<key>DeleteUnused</key>
 				<false/>
 				<key>FakeLPC</key>
@@ -189,6 +189,86 @@
 					<key>Replace</key>
 					<data>U0FUQQ==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>XOSI: change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>T1NJRA==</data>
+					<key>Replace</key>
+					<data>WFNJRA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>XOSI: change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change _STA to XSTA in ADP1</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>FBNfU1RBAA==</data>
+					<key>Replace</key>
+					<data>FBNYU1RBAA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change _BIF to XBIF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JJRgA=</data>
+					<key>Replace</key>
+					<data>WEJJRgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change _BIX to XBIX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JJWAA=</data>
+					<key>Replace</key>
+					<data>WEJJWAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change _BST to XBST</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JTVAA=</data>
+					<key>Replace</key>
+					<data>WEJTVAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change PSOC to XSOC in TPWR</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>FEQjUFNPQwA=</data>
+					<key>Replace</key>
+					<data>FEQjWFNPQwA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BATT: change PSDD to XSDD in PTID</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>FEVHUFNERAg=</data>
+					<key>Replace</key>
+					<data>FEVHWFNERAg=</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -202,32 +282,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>#Length</key>
-				<integer>720</integer>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>DptfTabl</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>PtidDevc</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -268,7 +322,13 @@
 			<integer>1</integer>
 			<key>#UseSystemIO</key>
 			<false/>
+			<key>EnableC2</key>
+			<false/>
+			<key>EnableC4</key>
+			<false/>
 			<key>EnableC6</key>
+			<false/>
+			<key>EnableC7</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
@@ -304,11 +364,11 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>-v dart=0 debug=0x100 slide=0</string>
+		<string>-v debug=0x100</string>
 		<key>Debug</key>
-		<false/>
+		<true/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>macOS</string>
 		<key>DisableCloverHotkeys</key>
 		<false/>
 		<key>HibernationFixup</key>
@@ -322,13 +382,13 @@
 		<key>RtcHibernateAware</key>
 		<false/>
 		<key>SignatureFixup</key>
-		<false/>
+		<true/>
 		<key>SkipHibernateTimeout</key>
 		<false/>
 		<key>StrictHibernate</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>10</integer>
+		<integer>0</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -341,6 +401,10 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
+		<key>C4</key>
+		<false/>
+		<key>C6</key>
+		<false/>
 		<key>HWPEnable</key>
 		<false/>
 		<key>UseARTFrequency</key>
@@ -543,14 +607,14 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<integer>11</integer>
+			<integer>21</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
 		<key>HDMIInjection</key>
 		<false/>
 		<key>LANInjection</key>
-		<true/>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
@@ -565,6 +629,8 @@
 				<data>pT4AAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
+				<key>enable-cfl-backlight-fix</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
@@ -579,6 +645,10 @@
 				<string>Intel UHD Graphics 620</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<false/>
+		<key>SetIntelMaxBacklight</key>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -696,7 +766,7 @@
 		<key>#KbdPrevLang</key>
 		<false/>
 		<key>#Language</key>
-		<string>ru:0</string>
+		<string>ko:0</string>
 		<key>#Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -718,9 +788,9 @@
 		<key>#TextOnly</key>
 		<false/>
 		<key>EmbeddedThemeType</key>
-		<string>Daytime</string>
+		<string>Light</string>
 		<key>Language</key>
-		<string>ko:0</string>
+		<string>ko:-17409</string>
 		<key>PlayAsync</key>
 		<false/>
 		<key>Scan</key>
@@ -952,7 +1022,7 @@
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelXCPM</key>
 		<false/>
 		<key>KextsToPatch</key>
@@ -1003,9 +1073,37 @@
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -1014,7 +1112,7 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C02711301GUHRPCJA</string>
+		<string>C02916500J9JH4R8C</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
@@ -1132,17 +1230,17 @@
 		<key>#Version</key>
 		<string>1.0</string>
 		<key>BiosReleaseDate</key>
-		<string>10/30/2019</string>
+		<string>03/07/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP142.88Z.F000.B00.1910301814</string>
+		<string>MBP152.88Z.F000.B00.2003070250</string>
 		<key>Board-ID</key>
-		<string>Mac-CAD6701F7CEA0921</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02711301GUHRPCJA</string>
+		<string>C02916500J9JH4R8C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -1154,13 +1252,13 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>203.0.0.0.0</string>
+		<string>1037.100.355.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE176</string>
+		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF7F</string>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -1168,13 +1266,13 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x1A</string>
+		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,2</string>
+		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02TFCY8HV2N</string>
+		<string>C02YL01CJHCC</string>
 		<key>SmUUID</key>
-		<string>A8638D6E-A5E7-4BF8-84B3-7B804A65C51E</string>
+		<string>6E3B264D-6469-408A-B54E-82A31E62EADC</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
