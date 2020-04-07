@@ -19,11 +19,11 @@ macOS 10.15.3 ~
 
 ## Bootloader
  - Clover
- - OpenCore (WIP)
+ - OpenCore (작업중)
 
 ## Known problems
- - clamshell (closing)
- - Fn Keys
+ - 노트북 화면 닫기가 작동하지 않습니다.
+ - Fn 키가 작동하지 않습니다.
 
 ## Kexts
  - Lilu
