@@ -101,7 +101,7 @@
 | :-------------------------------- | :----: | ------------------------------------ | ----------- |
 | Mic Recording                     |   OK   | `AppleALC.kext`, `config.plist`      | -           |
 | Audio Playback                    |   OK   | `AppleALC.kext`, `config.plist`      | -           |
-| Full Graphics Accleration (QE/CI) |   OK   | `WhateverGreen.kext`, `config.plist` | -           |
+| Full Graphics Acceleration (QE/CI) |   OK   | `WhateverGreen.kext`, `config.plist` | -           |
 
 -----------------------------------------------
 
