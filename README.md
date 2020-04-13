@@ -1,5 +1,7 @@
 # ASUS Vivobook X403FA
 
+![Mac](/image.png)
+
 ### NOTICE : Do not use OpenCore config yet
 [README (한국어)](/README-ko.md)
 

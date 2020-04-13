@@ -1,5 +1,7 @@
 # ASUS Vivobook X403FA
 
+![Mac](/image.png)
+
 ### 경고 : 오픈코어 설정은 아직 사용 가능한 상태가 아닙니다!
 [README (English)](/README.md)
 
