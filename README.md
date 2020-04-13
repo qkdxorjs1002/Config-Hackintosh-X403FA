@@ -40,11 +40,11 @@
 
 ### UEFI Setup Configuration
 
-| Path        | Value    | Description                   |
-| ----------- | -------- | ----------------------------- |
-| VT-d        | Disabled | Only 100M Ethernet if enabled |
-| VT-d        | Disabled | Only 100M Ethernet if enabled |
-| Secure Boot | Disabled | Only 100M Ethernet if enabled |
+| Path        | Value    | Description |
+| ----------- | -------- | ----------- |
+| VT          | Disabled | -           |
+| VT-d        | Disabled | -           |
+| Secure Boot | Disabled | -           |
 
 -----------------------------------------------
 
@@ -63,6 +63,7 @@
 | USB 3.1        |   OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -           |
 | USB Type-C     |   OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -           |
 | SD Card Reader |   OK   | -                                    | -           |
+| HDMI           |   OK   | `WhateverGreen.kext`, `config.plist` | -           |
 
 #### Networking
 

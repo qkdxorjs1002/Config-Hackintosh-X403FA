@@ -63,6 +63,7 @@
 | USB 3.1    |  OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -    |
 | USB Type-C |  OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -    |
 | SD카드 리더    |  OK   | -                                    | -    |
+| HDMI       |  OK   | `WhateverGreen.kext`, `config.plist` | -    |
 
 #### 네트워킹
 
