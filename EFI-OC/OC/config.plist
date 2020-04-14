@@ -665,6 +665,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>Display-dae-14d4.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -993,13 +1009,13 @@
 			<key>PickerMode</key>
 			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
-			<false/>
-			<key>ShowPicker</key>
 			<true/>
+			<key>ShowPicker</key>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1051,6 +1067,8 @@
 			<dict>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
+				<key>backlight-level</key>
+				<data>7bff</data>
 				<key>boot-args</key>
 				<string>igfxcflbklt=1 alcid=21</string>
 				<key>prev-lang:kbd</key>
