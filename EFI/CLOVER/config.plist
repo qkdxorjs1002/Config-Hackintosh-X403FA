@@ -189,16 +189,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>LID: change LID0 to LID</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>TElEMA==</data>
-					<key>Replace</key>
-					<data>TElEXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>LID: change _LID to XLID</string>
 					<key>Disabled</key>
 					<false/>
@@ -258,8 +248,6 @@
 		<string>macOS</string>
 		<key>DisableCloverHotkeys</key>
 		<false/>
-		<key>Fast</key>
-		<true/>
 		<key>HibernationFixup</key>
 		<false/>
 		<key>Legacy</key>
@@ -276,6 +264,8 @@
 		<false/>
 		<key>StrictHibernate</key>
 		<false/>
+		<key>Timeout</key>
+		<integer>0</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -336,10 +326,6 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-flags</key>
-				<data>AAAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>hda-gfx</key>
@@ -520,6 +506,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
+		<string>C028322004NJH4RCB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -549,7 +536,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
+		<string>C02X65ZUJHCC</string>
 		<key>SmUUID</key>
+		<string>336F5C32-7198-460D-8A19-D1DF031CE189</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
