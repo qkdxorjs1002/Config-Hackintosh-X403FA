@@ -489,7 +489,7 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C02916500J9JH4R8C</string>
+		<string></string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
@@ -506,7 +506,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C028322004NJH4RCB</string>
+		<string></string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -536,9 +536,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02X65ZUJHCC</string>
+		<string></string>
 		<key>SmUUID</key>
-		<string>336F5C32-7198-460D-8A19-D1DF031CE189</string>
+		<string></string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
