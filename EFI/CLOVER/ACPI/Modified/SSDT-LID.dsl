@@ -3,16 +3,16 @@
 //
 DefinitionBlock("", "SSDT", 2, "hack", "_LID", 0)
 {
-    External (LIDS, FieldUnitObj)
-    External (_SB_.PCI0.LPCB.EC__.LID_, DeviceObj)
-    External (_SB_.PCI0.LPCB.EC__._STA, MethodObj)
+    External (_SB_.PCI0.LPCB.EC__.LSTE, FieldUnitObj)
+    External (_SB_.PCI0.LPCB.EC__.LID0, DeviceObj)
     External (_SB_.PCI0.LPCB.EC__.ECRD, MethodObj)
     
-    Scope (\_SB.PCI0.LPCB.EC.LID)
+    Scope (\_SB.PCI0.LPCB.EC.LID0)
     {
         Method (_LID, 0, NotSerialized)  // _LID: Lid Status
         {
-            Return (LIDS)
+            Store (\_SB.PCI0.LPCB.EC.ECRD (RefOf (\_SB.PCI0.LPCB.EC.LSTE)), Local0)
+            Return (Local0)
         }
     }
 }
