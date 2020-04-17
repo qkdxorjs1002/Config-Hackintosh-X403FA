@@ -2,7 +2,7 @@
 
 ![Mac](/image.png)
 
-### NOTICE : Do not use OpenCore config yet
+### NOTICE : Use Opencore configuration. Clover configuration is deprecated.
 [README (한국어)](/README-ko.md)
 
 -----------------------------------------------
@@ -127,3 +127,14 @@
  - VoodooPS2Controller
  - AppleALC
  - NoTouchID
+
+-----------------------------------------------
+
+### Change Log
+
+#### 2020-04-17
+
+ - Update README.md, README-ko.md
+   - OpenCore (Daily)
+   - Clover (Deprecated)
+   - Add ChangeLog
