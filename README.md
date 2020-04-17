@@ -54,8 +54,9 @@
 
 #### Known problems
 
- - clamshell (closing)
+ - Clamshell (closing)
  - Fn Keys
+ - Keyboard backlit
 
 #### Connectivity
 
@@ -130,6 +131,16 @@
 
 -----------------------------------------------
 
+### Todo
+
+ - Fix clamshell state
+ - Fix ASUS fn keys
+ - Fix keyboard Backlit
+ - Fix EFI Err Logs (-v option)
+ - Disable framebuffer2 that sometimes cause lag
+
+-----------------------------------------------
+
 ### Change Log
 
 #### 2020-04-17
@@ -138,3 +149,4 @@
    - OpenCore (Daily)
    - Clover (Deprecated)
    - Add ChangeLog
+   - Add Todo
