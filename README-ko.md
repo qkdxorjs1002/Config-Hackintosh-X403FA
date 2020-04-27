@@ -136,12 +136,27 @@
  - 노트북 덮개 닫기 작동
  - ASUS 기능키 작동
  - 키보드 백라이트 작동
- - -v 옵션 부팅시 EFI 오류 수정
- - 간헐적으로 버벅임을 발생시키는 framebuffer2 비활성화
 
 -----------------------------------------------
 
 ### 변경사항
+
+#### 2020-04-27
+
+ - 내장그래픽
+   - 간헐적인 프리징과 렉 현상을 일으킨 Framebuffer 2 비활성화
+   - CFLFrameBuffer (FB0: Display / FB1: HDMI)
+   ![framebuffer](/applecflfb.png)
+
+ - 전원관리
+   - `CPUFriendDataProvider.kext` 업데이트
+   - `AppleCpuPmCfgLock`, `AppleCpuXcpmCfgLock` 옵션 비활성화
+   - C-Cores / P-States
+   ![c-states](/appleintelcpuinfo.png)
+
+ - GUI 부트화면
+   - OpenCanopy와 필요 리소스 추가
+   - `config.plist` 업데이트
 
 #### 2020-04-17
 

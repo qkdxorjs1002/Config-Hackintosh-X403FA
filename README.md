@@ -136,12 +136,27 @@
  - Fix clamshell state
  - Fix ASUS fn keys
  - Fix keyboard Backlit
- - Fix EFI Err Logs (-v option)
- - Disable framebuffer2 that sometimes cause lag
 
 -----------------------------------------------
 
 ### Change Log
+
+#### 2020-04-27
+
+ - IGPU
+   - Disable Frambuffer 2 causing random freeze and lag
+   - CFLFrameBuffer (FB0: Display / FB1: HDMI)
+   ![framebuffer](/applecflfb.png)
+
+ - PowerManagement
+   - Update `CPUFriendDataProvider.kext`
+   - Diable `AppleCpuPmCfgLock`, `AppleCpuXcpmCfgLock`
+   - C-Cores / P-States
+   ![c-states](/appleintelcpuinfo.png)
+   
+ - GUI BootPicker
+   - Add OpenCanopy and resources
+   - Update `config.plist`
 
 #### 2020-04-17
 
