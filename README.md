@@ -146,13 +146,13 @@
  - IGPU
    - Disable Frambuffer 2 causing random freeze and lag
    - CFLFrameBuffer (FB0: Display / FB1: HDMI)
-   ![framebuffer](/applecflfb.png)
+   - ![framebuffer](/applecflfb.png)
 
  - PowerManagement
    - Update `CPUFriendDataProvider.kext`
-   - Diable `AppleCpuPmCfgLock`, `AppleCpuXcpmCfgLock`
+   - Disable `AppleCpuPmCfgLock`, `AppleCpuXcpmCfgLock`
    - C-Cores / P-States
-   ![c-states](/appleintelcpuinfo.png)
+   - ![c-states](/appleintelcpuinfo.png)
    
  - GUI BootPicker
    - Add OpenCanopy and resources
