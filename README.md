@@ -110,7 +110,7 @@
 
 #### Bootloader
 
- - Clover
+ - Clover (Deprecated)
  - OpenCore
 
 #### Kexts
@@ -139,7 +139,25 @@
 
 -----------------------------------------------
 
+### Installation
+
+  1. Make macOS Installation USB
+  2. Replace EFI
+  3. Add `Boot argument: -v` in `config.plist`
+  4. Make your own `Serial`, `UUID` in `config.plist`
+  5. Reset NVRAM and reboot
+  6. Boot to USB
+  7. Install macOS (Use External HID)
+  8. Rebuild System & Kext Caches
+
+-----------------------------------------------
+
 ### Change Log
+
+#### 2020-04-29
+
+ - Update README.md, README-ko.md
+   - Add Installation
 
 #### 2020-04-27
 
