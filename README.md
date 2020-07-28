@@ -1,8 +1,9 @@
-# ASUS Vivobook X403FA
+# ASUS Vivobook X403FA (DEPRECATED)
 
 ![Mac](/image.png)
 
 ### NOTICE : Use Opencore configuration. Clover configuration is deprecated.
+### NO MORE UPDATE.
 [README (한국어)](/README-ko.md)
 
 -----------------------------------------------
@@ -17,6 +18,9 @@
 	- 10.15.4 (update1)
 		- 2020-04-02
 		- 2020-04-11
+  - 10.15.5
+  - 10.15.6
+    - 2020-07-21
 
 -----------------------------------------------
 
@@ -57,6 +61,7 @@
  - Clamshell (closing)
  - Fn Keys
  - Keyboard backlit
+ - HDMI issues
 
 #### Connectivity
 
@@ -66,7 +71,7 @@
 | USB 3.1        |   OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -           |
 | USB Type-C     |   OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -           |
 | SD Card Reader |   OK   | -                                    | -           |
-| HDMI           |   OK   | `WhateverGreen.kext`, `config.plist` | -           |
+| HDMI           |   BUG   | `WhateverGreen.kext`, `config.plist` | -           |
 
 #### Networking
 
@@ -118,7 +123,7 @@
  - Lilu
  - VirtualSMC
  - SMCProcessor
- - SMCBatteryMonitor
+ - SMCBatteryManager
  - CPUFriend
  - CPUFriendDataProvider
  - Whatevergreen
@@ -128,6 +133,7 @@
  - VoodooPS2Controller
  - AppleALC
  - NoTouchID
+ - AsusSMC
 
 -----------------------------------------------
 
@@ -153,6 +159,16 @@
 -----------------------------------------------
 
 ### Change Log
+
+#### 2020-07-21
+
+ - README.md, README-ko.md Update
+   - Fix typo
+ - ACPI
+   - Fix error
+ - Kexts Update
+ - OpenCore Update
+ - Deprecated
 
 #### 2020-04-29
 

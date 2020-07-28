@@ -1,8 +1,9 @@
-# ASUS Vivobook X403FA
+# ASUS Vivobook X403FA (DEPRECATED)
 
 ![Mac](/image.png)
 
 ### 공지 : 오픈코어 설정을 사용하세요, 클로버 설정은 더 이상 업데이트되지 않습니다.
+### 리얼맥 전환으로 더 이상 업데이트는 없습니다.
 [README (English)](/README.md)
 
 -----------------------------------------------
@@ -17,6 +18,9 @@
 	- 10.15.4 (update1)
 		- 2020-04-02
 		- 2020-04-11
+  - 10.15.5
+  - 10.15.6
+    - 2020-07-21
 
 -----------------------------------------------
 
@@ -57,6 +61,7 @@
  - 덮개 닫기 작동 안함
  - Fn 키 작동 안함
  - 키보드 백라이트 작동 안함
+ - HDMI 일부 모니터에서 작동 안함
 
 #### 연결
 
@@ -66,7 +71,7 @@
 | USB 3.1    |  OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -    |
 | USB Type-C |  OK   | `USBInjectAll.kext` , `SSDT-USB.aml` | -    |
 | SD카드 리더    |  OK   | -                                    | -    |
-| HDMI       |  OK   | `WhateverGreen.kext`, `config.plist` | -    |
+| HDMI       |  BUG   | `WhateverGreen.kext`, `config.plist` | -    |
 
 #### 네트워킹
 
@@ -118,7 +123,7 @@
  - Lilu
  - VirtualSMC
  - SMCProcessor
- - SMCBatteryMonitor
+ - SMCBatteryManager
  - CPUFriend
  - CPUFriendDataProvider
  - Whatevergreen
@@ -128,6 +133,7 @@
  - VoodooPS2Controller
  - AppleALC
  - NoTouchID
+ - AsusSMC
 
 -----------------------------------------------
 
@@ -154,7 +160,17 @@
 
 ### 변경사항
 
-#### 2020-04-17
+#### 2020-07-21
+
+ - README.md, README-ko.md 업데이트
+   - 오타 수정
+ - ACPI
+   - 프리징 원인 해결
+ - Kext 업데이트
+ - OpenCore 업데이트
+ - 사용자 리얼맥 전환으로 업데이트 중지
+
+#### 2020-04-29
 
  - README.md, README-ko.md 업데이트
    - 설치 과정 추가
